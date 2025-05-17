@@ -15,14 +15,6 @@
   <a href="./LICENSE-QCDA"><img src="https://img.shields.io/badge/license-Q--CDA-lightgrey.svg" alt="License: Q-CDA"></a>
 </p>
 
-### 📄 Lua Projects
-
-- [Qompass Diver](https://github.com/qompassai/Diver)
-- [Qompass rose.nvim](https://github.com/qompassai/rose.nvim)
-- [Qompass blaze.nvim](https://github.com/qompassai/blaze.nvim)
-- [Qompass blaze-ts.nvim](https://github.com/qompassai/blaze-ts.nvim)
-
----
 
 <details id="Contact">
   <summary><strong>Contact Qompass AI</strong></summary>
