@@ -1,28 +1,34 @@
-% /qompassai/latex/cv/cv.tex
-% -----------------------------
+% ~/.GH/Qompass/Latex/resume/resume.tex
+% -------------------------------------
 % Copyright (C) 2025 Qompass AI, All rights reserved
+
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% CV LaTeX Template for CV/Resume
+% Awesome CV LaTeX Template for Resume
+%
+% This template has been downloaded from:
+%
 % Author:
 % Matt A. Porter <map@qompass.ai>
 %
+%
+
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper]{cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
-% Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+% \definecolor{awesome}{HTML}{3E6D9C}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -44,13 +50,13 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{Matt A.}{Porter}
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Matt}{Porter}
 \position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
 \address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
 
-\mobile{(+1) 253-532-1843}
-\email{map@qompass.ai}
+\mobile{(+82) 10-9030-1843}
+\email{posquit0.bj@gmail.com}
 %\dateofbirth{January 1st, 1970}
 \homepage{www.yourpage.com}
 \github{phaedrusflow}
@@ -60,7 +66,7 @@
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \medium{medium-id}
+% \medium{madium-id}
 % \kaggle{kaggle-id}
 % \hackerrank{hackerrank-id}
 % \telegram{telegram-username}
@@ -77,13 +83,13 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Matt A. Porter~~~·~~~Curriculum Vitae}
+  {Matt Porter~~~·~~~Résumé}
   {\thepage}
 
 
@@ -91,15 +97,15 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/certificates.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
+\input{resume/summary.tex}
+\input{resume/experience.tex}
+\input{resume/honors.tex}
+\input{resume/certificates.tex}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\input{resume/education.tex}
+% \input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
