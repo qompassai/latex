@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.17)  24 JUL 2025 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=latex 2025.6.17)  25 JUL 2025 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,11 +136,14 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 )
-(/home/phaedrus/texmf/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-)
-No file attention.aux.
+(/home/phaedrus/texmf/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2025-06-09 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box55
+\l__pdfannot_backend_model_box=\box56
+\g__pdfannot_backend_int=\count286
+\g__pdfannot_backend_link_int=\count287
+\g__pdfannot_backend_link_sf_int=\count288
+) (./attention.aux)
 \openout1 = `attention.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -157,33 +160,22 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 Preview: Fontsize 10pt
-Preview: PDFoutput 1
 Preview: Tightpage 0 0 0 0
-[1{/home/phaedrus/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./attention.aux)
+[1] (./attention.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1931 strings out of 473201
- 31254 string characters out of 5722935
- 418996 words of memory out of 5000000
- 25204 multiletter control sequences out of 15000+600000
+ 1936 strings out of 473202
+ 31669 string characters out of 5722961
+ 424139 words of memory out of 5000000
+ 25208 multiletter control sequences out of 15000+600000
  559291 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,4n,71p,221b,111s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on attention.pdf (1 page, 47647 bytes).
-PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70i,4n,71p,221b,111s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on attention.dvi (1 page, 1976 bytes).
