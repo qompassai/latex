@@ -1,135 +1,82 @@
-% ~/.GH/Qompass/Latex/cv/cover_letter.tex
-% ---------------------------------------
+% /qompassai/latex/cv/cover_letter.tex
+% Qompass AI Cover Letter Template
 % Copyright (C) 2025 Qompass AI, All rights reserved
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 %
-%
-% Authors:
-% Matt A. Porter <map@qompass.ai>
-%
+% Author: Matt A. Porter <map@qompass.ai>
+% ----------------------------------------
 %
 
+\documentclass[11pt,a4paper]{awesome-cv}
+\input{vars.tex}
+%-----------------------------------------------------------------------------
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{fontspec}
+\emergencystretch=2em
 
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{cv}
+\setmainfont{Lato}
+\setsansfont{Lato}
+\renewcommand{\familydefault}{\sfdefault}
 
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\geometry{left=2.5cm,right=2.5cm,top=1.5cm,bottom=2cm,footskip=.5cm}
+\definecolor{awesome}{HTML}{BB2528}
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
-
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./examples/profile}
-\name{Matt A.}{POrter}
-\position{Founder & CEO{\enskip\cdotp\enskip}Technologist}
-\address{811 E Queen Ave, Spokane, WA, 99207}
-
-\mobile{(+1) 509-919-5237}
-\email{map@qompass.ai}
-%\dateofbirth{Sep 23rd, 1988}
-\homepage{www.yoursite.com}
-\github{phaedrusflow}
-\linkedin{phaedrusflow}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \telegram{telegram-username}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-
-%-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
-%-------------------------------------------------------------------------------
-\recipient
-  {Hiring Committee}
-  {Project Access Northwest\\Remote / Spokane, WA}
-\letterdate{\today}
-\lettertitle{Application for Health Plan Navigator Specialist / Care Coordinator II}
-\letteropening{Dear Hiring Committee,}
-\letterclosing{Respectfully,\\[1.5em]Matthew A. Porter}
-\letterenclosure[Attached]{Curriculum Vitae}
-
-
-%-------------------------------------------------------------------------------
+\providecommand{\namefont}{\fontfamily{phv}\selectfont\fontsize{24pt}{28pt}\bfseries}
+\newcommand*\CustomHeader{%
+  \begin{center}
+  {\namefont Matt A.~Porter\\[3pt]}
+  {\small Technologist {\Large\textperiodcentered} Service‑Disabled Veteran}\\[3pt]
+  811 E Queen Ave, Spokane, WA 99207 \quad|\quad (+1) 509‑919‑5237\\[3pt]
+  \href{mailto:map@qompass.ai}{\faEnvelope\enskip map@qompass.ai}\enskip
+  \href{https://github.com/phaedrusflow}{\faGithub\enskip phaedrusflow}\enskip
+  \href{https://www.linkedin.com/in/matt-a-porter-103535224}{\faLinkedin\enskip matt‑a‑porter}\enskip
+  \href{https://orcid.org/0000-0002-0302-4812}{\faOrcid\enskip ORCID}\enskip
+  \href{https://www.youtube.com/@qompassai}{\faIcon{youtube}\enskip Qompass AI}
+\end{center}
+\vspace{1.2em}
+}
+\recipient{\RecipientName}{\CompanyName\\\CompanyAddress}
+\letterdate{\LetterDate}
+\lettertitle{Application for \JobTitle}
+\letteropening{Dear \RecipientName,}
+\let\makeletterclosing\relax
+\letterenclosure[Attached]{Resume}
 \begin{document}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{0pt}
+\linespread{1.15}
+\justifying
+\CustomHeader
+\makecvfooter{}{%
+	\textsc{map@qompass.ai · (+1) 509‑919‑5237 · github.com/phaedrusflow}}{}
 
-\makecvheader[R]
-
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Matt A. Porter~~~·~~~Cover Letter}
-  {}
-
-% Print the title with above letter information
 \makelettertitle
-
-%-------------------------------------------------------------------------------
-%	LETTER CONTENT
-%-------------------------------------------------------------------------------
 \begin{cvletter}
+	\RaggedRight
 
-\lettersection{Introduction}
-It is a pleasure to apply for the Health Plan Navigator Specialist / Care Coordinator II position with Project Access Northwest. My career has centered on expanding healthcare access through service coordination, outreach, and data-driven innovation. I believe this role directly aligns with both my professional experience and lifelong commitment to improving equitable healthcare across Washington.
+	It is a pleasure to apply for the \textbf{\JobTitle} position with \CompanyName. My career has centered on expanding healthcare access through service coordination, outreach, and data‑driven innovation. I believe this role directly aligns with both my professional experience and lifelong commitment to improving equitable healthcare across Washington.
 
-\lettersection{Professional Background}
-My multidisciplinary background integrates medical, technological, and organizational leadership. As the Founder of Qompass AI, I lead initiatives that combine health education and analytics to help underserved communities navigate complex systems efficiently and respectfully. At Washington State University’s Elson S. Floyd College of Medicine, I co-founded a mentorship and outreach network that supported over 8,000 youth and community members and built an AI-enabled knowledge management platform adopted college-wide.  
+	My multidisciplinary background integrates medical, technological, and organizational leadership. As the founder of Qompass AI, I lead initiatives that combine health education and analytics to empower quality AI adoption at the intersection of healthcare and education. At Washington State University’s Elson S. Floyd College of Medicine, I co-founded a mentorship and outreach network that supported over 8,000 youth and community members, and built an AI‑enabled, knowledge‑management platform adopted college‑wide.
 
-Previously, as an Army Intelligence Officer, I learned to manage data integrity, coordinate with multi-agency teams, and handle confidential information with professionalism and precision—skills directly applicable to client tracking, billing, and HIPAA-compliant correspondence required for this role.
+	Previously, as an Army Intelligence Officer, I learned to manage data integrity, coordinate with multi‑agency teams, and handle confidential information with professionalism and precision — skills directly applicable to client tracking, billing, and HIPAA‑compliant correspondence required for this role.
 
-\lettersection{Alignment With This Role}
-I bring a practical understanding of how medical, civic, and technological systems interface. Through working with underserved clinics such as Spanaway Community Healthcare and Tacoma Neighborhood Free Clinic, I helped patients navigate referrals, insurance applications, and transportation barriers—mirroring the task scope of this position.  
+	I bring a practical understanding of how medical, civic, and technological systems interface. Through work with underserved clinics such as Spanaway Community Healthcare and Tacoma Neighborhood Free Clinic. I helped patients navigate referrals, insurance application, and transportation barriers — mirroring the task scope of this position.
 
-My certifications in HIPAA compliance, emergency medical services, and data management complement your program’s focus on accuracy and efficiency. I am also well-versed in leveraging secure software systems for case processing, reporting, and patient outreach.
+	My certifications in HIPAA compliance, emergency medical services, and data management complement your program’s focus on accuracy and efficiency. I am also well‑versed in leveraging secure software systems for case processing, reporting, and patient outreach.
 
-\lettersection{Why Project Access Northwest}
-Project Access Northwest’s mission to connect people with specialty and affordable care resonates deeply with my professional and personal values. Your emphasis on proactive plan monitoring, relationship-building, and compassionate communication reflects how I approach my work. I am eager to join an organization that shares my dedication to ensuring every patient receives the coordination, advocacy, and respect they deserve.
+	The mission of \CompanyName{} — \emph{\CompanyMission{}} — resonates deeply with my professional and personal values. Your emphasis on proactive plan monitoring, relationship‑building, and compassionate communication reflects how I approach my work. I am eager to join an organization that shares my dedication to ensuring every patient receives the coordination, advocacy, and respect they deserve.
 
-\lettersection{Closing}
-Thank you for considering my application. I would welcome the opportunity to bring my background in healthcare systems, data operations, and patient advocacy to support the Premium Assistance and Specialty Medical Care Coordination programs at Project Access Northwest.
+\vspace{1.5em}
+\noindent
+Respectfully,\\[1em]
+Matthew A. Porter
 
 \end{cvletter}
-
-
-%-------------------------------------------------------------------------------
-\makeletterclosing
-\vspace{2em}
-\noindent
-Respectfully,\\[1.5em]
-Matthew A. Porter
-
 \end{document}
